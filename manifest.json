@@ -35,6 +35,16 @@
                             "path":  "upload-bg/bg_07.png",
                             "sha256":  "d8969cdb0c10e48ca80193e6fc04332b7249bf60d129d88b9e87f6fa96e8847f",
                             "size":  2640888
+                        },
+                        {
+                            "path":  "upload-bg/bg_08.png",
+                            "sha256":  "a8640995806811dd1a0bc8a12cd647f84cf42699a6316d8327d762441226415a",
+                            "size":  3158684
+                        },
+                        {
+                            "path":  "upload-bg/bg_09.png",
+                            "sha256":  "241fb6b97df42cd0c30f3bdf4766d2ac3289b48f667622eed13e727c01428ee3",
+                            "size":  3075643
                         }
                     ],
     "CommunityLinkFile":  "linkcongdong.txt",
