@@ -3,23 +3,38 @@
     "Backgrounds":  [
                         {
                             "path":  "upload-bg/bg_01.png",
-                            "sha256":  "ed63667728857af1ab42874292139a3709e23b7411a1d64e2ace2789aee37a93",
-                            "size":  2548162
+                            "sha256":  "3516e74360c056d448b74a29d0dab73aecd035f1a5c985c0b993d9433d3e96a0",
+                            "size":  3147115
                         },
                         {
                             "path":  "upload-bg/bg_02.png",
-                            "sha256":  "953e55594c4dd9cabaee378cd2aa5ab746568dcd79d9194d2e47082809bdf997",
-                            "size":  2574986
+                            "sha256":  "4e7cf86a258357a633214e1c6f52936402370227c91747811ce7378912931ad9",
+                            "size":  2662259
                         },
                         {
                             "path":  "upload-bg/bg_03.png",
-                            "sha256":  "3c3192d1059b8350712c28cc80639d79a115bbe1d69e15fbdaa583eaff3ae1de",
-                            "size":  2361083
+                            "sha256":  "76df6709cea9483faafe1fbe3fde94903149f3fc5bd26e19f27e9f5b19654217",
+                            "size":  2956502
                         },
                         {
                             "path":  "upload-bg/bg_04.png",
-                            "sha256":  "cf4b4a9d32e111a044e578c9736303f0adeedbc4db40b7e8b7862e8b51844202",
-                            "size":  2588035
+                            "sha256":  "62550747bacf28e29e0733073a61418fad713af80755f3e033e5f585ebeff644",
+                            "size":  2506492
+                        },
+                        {
+                            "path":  "upload-bg/bg_05.png",
+                            "sha256":  "73a49bb658bde6cea3684638180660a7a166caeef91bd9aeba3abc9ee72bbe0a",
+                            "size":  2341822
+                        },
+                        {
+                            "path":  "upload-bg/bg_06.png",
+                            "sha256":  "c9020c84716dfe26ff945c63dbd24f298acac3c1b8d5fd5464faa5c58d5753c3",
+                            "size":  2953588
+                        },
+                        {
+                            "path":  "upload-bg/bg_07.png",
+                            "sha256":  "d8969cdb0c10e48ca80193e6fc04332b7249bf60d129d88b9e87f6fa96e8847f",
+                            "size":  2640888
                         }
                     ],
     "CommunityLinkFile":  "linkcongdong.txt",
