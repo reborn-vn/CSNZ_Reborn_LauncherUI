@@ -1,0 +1,27 @@
+{
+    "Version":  1,
+    "Backgrounds":  [
+                        {
+                            "path":  "upload-bg/bg_01.png",
+                            "sha256":  "ed63667728857af1ab42874292139a3709e23b7411a1d64e2ace2789aee37a93",
+                            "size":  2548162
+                        },
+                        {
+                            "path":  "upload-bg/bg_02.png",
+                            "sha256":  "953e55594c4dd9cabaee378cd2aa5ab746568dcd79d9194d2e47082809bdf997",
+                            "size":  2574986
+                        },
+                        {
+                            "path":  "upload-bg/bg_03.png",
+                            "sha256":  "3c3192d1059b8350712c28cc80639d79a115bbe1d69e15fbdaa583eaff3ae1de",
+                            "size":  2361083
+                        },
+                        {
+                            "path":  "upload-bg/bg_04.png",
+                            "sha256":  "cf4b4a9d32e111a044e578c9736303f0adeedbc4db40b7e8b7862e8b51844202",
+                            "size":  2588035
+                        }
+                    ],
+    "CommunityLinkFile":  "linkcongdong.txt",
+    "DownloadLinkFile":  "linkdownload.txt"
+}
