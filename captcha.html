@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>CSNZ VN: Reborn - Xác minh đăng ký</title>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=ready&render=explicit" async defer></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #0c0d12; color: #e9ebf0; font-family: 'Segoe UI', Arial, sans-serif; }
+  main { min-height: 100%; display: flex; align-items: center; justify-content: center; }
+  .card { width: min(420px, calc(100% - 32px)); padding: 28px 24px; border-radius: 16px; background: #11131a;
+          border: 1px solid rgba(242,179,49,.45); text-align: center; }
+  h1 { margin: 0 0 6px; font-size: 20px; letter-spacing: .5px; color: #fff; }
+  p { margin: 8px 0 18px; color: #9aa1b2; font-size: 14px; line-height: 1.5; }
+  #box { display: flex; justify-content: center; min-height: 70px; }
+  .ok { color: #7ee2a8; } .bad { color: #ff7b72; }
+</style>
+</head>
+<body>
+<main><div class="card">
+  <h1>XÁC MINH ĐĂNG KÝ</h1>
+  <p id="note">Hoàn thành ô xác minh bên dưới. Launcher sẽ tự tiếp tục đăng ký.</p>
+  <div id="box"></div>
+</div></main>
+<script>
+// Opened by RebornLauncher with ?sitekey=…&port=…&state=…  The Turnstile token goes back only to the
+// launcher on this PC (127.0.0.1); the game server then verifies it with Cloudflare.
+var q = new URLSearchParams(location.search);
+var siteKey = q.get('sitekey') || '', port = q.get('port') || '', state = q.get('state') || '';
+var note = document.getElementById('note');
+function fail(text) { note.textContent = text; note.className = 'bad'; }
+var valid = /^[0-9A-Za-z_-]{10,100}$/.test(siteKey) && /^[0-9]{4,5}$/.test(port) && +port > 1023 && +port < 65536 &&
+            /^[0-9a-f]{32}$/.test(state);
+function ready() {
+  if (!valid) { fail('Liên kết xác minh không hợp lệ. Hãy bấm Đăng ký lại trong launcher.'); return; }
+  turnstile.render('#box', {
+    sitekey: siteKey, theme: 'dark', language: 'vi',
+    callback: function (token) {
+      note.textContent = 'Đã xác minh. Đang quay lại launcher…'; note.className = 'ok';
+      location.replace('http://127.0.0.1:' + port + '/done?state=' + state + '&token=' + encodeURIComponent(token));
+    },
+    'expired-callback': function () { fail('Mã xác minh đã hết hạn, vui lòng làm lại.'); },
+    'error-callback': function () { fail('Không tải được CAPTCHA. Kiểm tra kết nối mạng rồi thử lại.'); }
+  });
+}
+if (!valid) fail('Liên kết xác minh không hợp lệ. Hãy bấm Đăng ký lại trong launcher.');
+</script>
+</body>
+</html>
